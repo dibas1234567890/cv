@@ -1,0 +1,32 @@
+{% load static tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% tailwind_css %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume - Dibas Pratap Basnet</title>
+</head>
+<body>
+     <div class="container">
+
+        <div class="grid">
+            <table class = "table-fixed"	>
+                <thead>
+                    <tr><th> {{ content }} </th>
+                </thead>
+                
+                   <tbody>
+                     <tr><td><a href="{% url 'download' %}"><button class=" transition ease-in-out bg-black hover:bg-blue-700  
+                        delay-150 text-white font-bold py-2 px-4 rounded hover:scale-110">Download CV</button></a></td>
+                    </tr>
+                   </tbody>
+               </table>
+        </div>
+        
+    </div>
+  </div>
+</body>
+</html>
